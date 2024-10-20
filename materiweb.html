@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Persamaan Linier Dua Variabel</title>
+    <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kelas 8</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+        <style>
+            /* Mengatur desain global */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+    
+            /* Mengatur lebar konten utama */
+            .container {
+                max-width: 900px;
+                width: 100%;
+                margin: 0 auto;
+                background-color: white;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            /* Header */
+            header {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+    
+            h1 {
+                font-size: 22px;
+                color: #1757fa;
+                margin-bottom: 20px;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            }
+    
+            /* Section konten utama */
+            h2 {
+                font-size: 20px;
+                margin-bottom: 10px;
+                color: #111111;
+                border-bottom: 2px solid #a05c04e7;
+                padding-bottom: 5px;
+            }
+    
+            h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #2c1c07e7;
+            }
+    
+            p {
+                font-size: 16px;
+                line-height: 1.6;
+                margin-bottom: 10px;
+                text-align: justify;
+                color: #000000;
+            }
+    
+            ul {
+                margin-left: 20px;
+                margin-bottom: 20px;
+            }
+    
+            li {
+                font-size: 16px;
+                margin-bottom: 5px;
+                color: #000000;
+            }
+    
+            /* Responsif untuk tampilan mobile */
+            @media (max-width: 768px) {
+                body {
+                    padding: 10px;
+                }
+    
+                h1 {
+                    font-size: 22px;
+                }
+    
+                h2 {
+                    font-size: 20px;
+                }
+    
+                h3 {
+                    font-size: 18px;
+                }
+    
+                p, li {
+                    font-size: 14px;
+                }
+    
+                .container {
+                    padding: 10px;
+                }
+    
+                iframe {
+                    min-height: 200px;
+                }
+            }
+    
+            /* Responsif untuk iframe video */
+            iframe {
+                max-width: 100%;
+                height: auto;
+                border: 0;
+                border-radius: 8px;
+            }
+    
+            /* Footer diatur dengan flexbox agar selalu di tengah halaman */
+            footer {
+                text-align: center;
+                margin: 20px auto;
+                font-size: 14px;
+                color: #000;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!-- Navbar Responsif dengan warna biru -->
+        <nav class="navbar navbar-expand-lg bg-primary w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="spldvweb.html">HOME</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="materiweb.html">MATERI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mediaweb.html">MEDIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lembarkerjaweb.html">LEMBAR KERJA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="latihanweb.html">TUGAS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+<body>
+    <div class="container">
+    <h1>Persamaan Linier Dua Variabel</h1>
+
+    <h2>Bentuk Umum</h2>
+    <p>
+        Bentuk umum dari persamaan linier dua variabel dapat disusun sebagai berikut:
+    </p>
+    <ul>
+        <li>Bentuk standar: <strong>Ax + By = C</strong></li>
+        <li>Bentuk miring: <strong>y = mx + b</strong> (di mana <strong>m</strong> adalah gradien dan <strong>b</strong> adalah intersep)</li>
+    </ul>
+
+    <h2>Metode Penyelesaian</h2>
+    <p>
+        Ada beberapa metode yang dapat digunakan untuk menyelesaikan sistem persamaan linier dua variabel, antara lain:
+    </p>
+    <ul>
+        <li><strong>Metode Substitusi:</strong> Mengganti salah satu variabel dengan ekspresi dari persamaan lain.</li>
+        <li><strong>Metode Eliminasi:</strong> Menghilangkan satu variabel dengan menjumlahkan atau mengurangkan persamaan.</li>
+        <li><strong>Metode Grafik:</strong> Menggambarkan kedua persamaan di dalam sistem koordinat dan mencari titik potongnya.</li>
+    </ul>
+
+    <div class="container">
+    <h2>a. Metode Substitusi SPLDV</h2>
+
+        <h4>Pengertian</h4>
+        <p>
+            Metode substitusi adalah cara untuk menyelesaikan sistem persamaan linear dua variabel dengan mengisolasi salah satu variabel dan kemudian menggantikan nilai tersebut ke persamaan lainnya.
+        </p>
+
+        <h4>Bentuk Umum</h4>
+        <p>
+            Sistem persamaan linear dua variabel memiliki bentuk umum:
+        </p>
+        <ul>
+            <li><strong>Persamaan 1:</strong> a<sub>1</sub>x + b<sub>1</sub>y = c<sub>1</sub></li>
+            <li><strong>Persamaan 2:</strong> a<sub>2</sub>x + b<sub>2</sub>y = c<sub>2</sub></li>
+        </ul>
+
+        <h4>Langkah-langkah Metode Substitusi</h4>
+        <div class="steps">
+            <ol>
+                <li>Pilih salah satu persamaan dan isolasi salah satu variabel.</li>
+                <li>Substitusikan nilai variabel yang telah diisolasi ke dalam persamaan lainnya.</li>
+                <li>Selesaikan persamaan yang tersisa untuk mendapatkan nilai variabel lainnya.</li>
+                <li>Substitusikan kembali nilai yang ditemukan ke dalam salah satu persamaan untuk mendapatkan nilai variabel yang pertama.</li>
+            </ol>
+        </div>
+
+        <h4>Contoh</h4>
+        <div class="example">
+            <p><strong>Contoh:</strong></p>
+            <p>Selesaikan sistem persamaan berikut:</p>
+            <p>1) 2x + 3y = 12</p>
+            <p>2) x - y = 1</p>
+        </div>
+
+        <h4>Penyelesaian:</h4>
+        <ol>
+            <li>Isolasi variabel y dari persamaan kedua:</li>
+            <p>x - y = 1  <strong>→</strong>  y = x - 1</p>
+            <li>Substitusikan y ke dalam persamaan pertama:</li>
+            <p>2x + 3(x - 1) = 12</p>
+            <li>Selesaikan persamaan:</li>
+            <p>2x + 3x - 3 = 12  <strong>→</strong>  5x = 15  <strong>→</strong>  x = 3</p>
+            <li>Substitusikan x ke dalam persamaan y = x - 1:</li>
+            <p>y = 3 - 1  <strong>→</strong>  y = 2</p>
+        </ol>
+        <h4>Solusi:</h4>
+        <p><strong>Nilai x:</strong> 3, <strong>Nilai y:</strong> 2</p>
+    </div>
+
+    <div class="container">
+        <h2>b. Metode Eliminasi SPLDV</h2>
+
+        <h4>Pengertian</h4>
+        <p>
+            Metode eliminasi adalah cara untuk menyelesaikan sistem persamaan linear dua variabel dengan menghilangkan salah satu variabel 
+            melalui penjumlahan atau pengurangan persamaan. Dengan demikian, kita dapat menyelesaikan persamaan yang tersisa.
+        </p>
+
+        <h4>Bentuk Umum</h4>
+        <p>
+            Sistem persamaan linear dua variabel memiliki bentuk umum:
+        </p>
+        <ul>
+            <li><strong>Persamaan 1:</strong> a<sub>1</sub>x + b<sub>1</sub>y = c<sub>1</sub></li>
+            <li><strong>Persamaan 2:</strong> a<sub>2</sub>x + b<sub>2</sub>y = c<sub>2</sub></li>
+        </ul>
+
+        <h4>Langkah-langkah Metode Eliminasi</h4>
+        <div class="steps">
+            <ol>
+                <li>Atur persamaan agar variabel yang akan dihilangkan memiliki koefisien yang sama.</li>
+                <li>Kalikan persamaan jika perlu untuk mencapai koefisien yang sama.</li>
+                <li>Jumlahkan atau kurangkan persamaan untuk menghilangkan salah satu variabel.</li>
+                <li>Selesaikan persamaan yang tersisa untuk mendapatkan nilai variabel lainnya.</li>
+                <li>Substitusikan nilai yang ditemukan ke dalam salah satu persamaan untuk mendapatkan nilai variabel yang pertama.</li>
+            </ol>
+        </div>
+
+        <h4>Contoh</h4>
+        <div class="example">
+            <p><strong>Contoh:</strong></p>
+            <p>Selesaikan sistem persamaan berikut:</p>
+            <p>1) 3x + 2y = 16</p>
+            <p>2) 4x - 2y = 2</p>
+        </div>
+
+        <h4>Penyelesaian:</h4>
+        <ol>
+            <li>Jumlahkan persamaan pertama dan kedua untuk menghilangkan variabel y:</li>
+            <p>(3x + 2y) + (4x - 2y) = 16 + 2</p>
+            <li>Sederhanakan:</li>
+            <p>3x + 4x = 18  <strong>→</strong>  7x = 18  <strong>→</strong>  x = 18/7 ≈ 2.57</p>
+            <li>Substitusikan x ke dalam persamaan pertama:</li>
+            <p>3(18/7) + 2y = 16</p>
+            <li>Sederhanakan:</li>
+            <p>54/7 + 2y = 16  <strong>→</strong>  2y = 16 - 54/7</p>
+            <li>Ubah 16 ke bentuk pecahan:</li>
+            <p>2y = 112/7 - 54/7  <strong>→</strong>  2y = 58/7</p>
+            <li>Selesaikan untuk y:</li>
+            <p>y = 29/7 ≈ 4.14</p>
+        </ol>
+        <h4>Solusi:</h4>
+        <p><strong>Nilai x:</strong> 3, <strong>Nilai y:</strong> 2</p>
+    </div>
+
+    <div class="container">
+        <h2>c. Metode Campuran</h2>
+        <p>Metode campuran dalam menyelesaikan SPLDV melibatkan penggunaan dua metode, yaitu substitusi dan eliminasi. Berikut adalah langkah-langkahnya:</p>
+        
+        <h3>1. Menggunakan Metode Substitusi</h3>
+        <p>Pilih salah satu persamaan dan selesaikan untuk salah satu variabel.</p>
+        <p>Contoh:</p>
+        <p>Diberikan sistem:</p>
+        <p>1. 2x + 3y = 12</p>
+        <p>2. 4x - y = 1</p>
+        <p>Dari persamaan pertama, kita dapat menyelesaikan untuk y:</p>
+        <p>3y = 12 - 2x <br> y = (12 - 2x) / 3</p>
+
+        <h3>2. Substitusi ke dalam Persamaan Kedua</h3>
+        <p>Gantikan nilai y ke dalam persamaan kedua:</p>
+        <p>4x - ((12 - 2x) / 3) = 1</p>
+        <p>Kalikan seluruh persamaan dengan 3 untuk menghilangkan pecahan:</p>
+        <p>12x - (12 - 2x) = 3</p>
+        <p>12x - 12 + 2x = 3</p>
+        <p>14x = 15 <br> x = 15/14</p>
+
+        <h3>3. Menggunakan Metode Eliminasi</h3>
+        <p>Kita dapat mengeliminasi satu variabel dari sistem. Misalnya, kita gunakan persamaan yang telah kita modifikasi:</p>
+        <p>2(2x + 3y = 12) => 4x + 6y = 24</p>
+        <p>Kemudian kita kurangi dengan persamaan yang kedua:</p>
+        <p>4x + 6y - (4x - y) = 24 - 1</p>
+        <p>7y = 23 <br> y = 23/7</p>
+
+    </div>
+    
+    <div class="container">
+        <h2>Kesimpulan Akhir</h2>
+        <p>
+            Memahami SPLDV dan metode penyelesaiannya adalah keterampilan dasar yang sangat berguna dalam matematika dan aplikasi di dunia nyata. 
+            Dengan menguasai SPLDV, siswa dapat meningkatkan kemampuan analitis dan pemecahan masalah.
+        </p>
+    </div>
+
+<footer>
+    &copy; 2024 Persamaan Linier Dua Variabel
+</footer>
+</body>
+</html>
